@@ -37,6 +37,8 @@ export default function Layout() {
     "href": "#features"
   },
   { name: "About", href: "/about" },
+  { name: "About Us", href: "/about-us" },
+
 
 ];
 
