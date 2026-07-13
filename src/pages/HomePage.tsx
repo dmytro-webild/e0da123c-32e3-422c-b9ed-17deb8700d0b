@@ -16,7 +16,8 @@ import TestimonialsSection from './HomePage/sections/Testimonials';
 
 import PartnersSection from './HomePage/sections/Partners';
 import FaqSection from './HomePage/sections/Faq';
-import ContactDetailsSection from './HomePage/sections/ContactDetails';export default function HomePage(): React.JSX.Element {
+import ContactDetailsSection from './HomePage/sections/ContactDetails';
+import CtaSection from './HomePage/sections/Cta';export default function HomePage(): React.JSX.Element {
   return (
 <>
   <HeroSection />
@@ -33,6 +34,7 @@ import ContactDetailsSection from './HomePage/sections/ContactDetails';export de
   <TeamSection />
 
   <TestimonialsSection />
+      <CtaSection />
       <ContactDetailsSection />
 
       <FaqSection />
