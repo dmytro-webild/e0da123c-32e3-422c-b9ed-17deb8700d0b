@@ -4,7 +4,7 @@ import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import { Outlet } from 'react-router-dom';
 import { StyleProvider } from "@/components/ui/StyleProvider";
-import { Send, Instagram, Phone, Mail, MapPin, ExternalLink } from "lucide-react";
+import { Send, Instagram, Phone, Mail, MapPin, ExternalLink, Youtube, MessageCircle } from "lucide-react";
 
 export default function Layout() {
   const navItems = [
