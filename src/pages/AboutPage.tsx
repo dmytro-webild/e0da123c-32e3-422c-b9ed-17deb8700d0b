@@ -1,86 +1,12 @@
-import React from "react";
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import AboutTextSplit from "@/components/sections/about/AboutTextSplit";
-import FeaturesIconCards from "@/components/sections/features/FeaturesIconCards";
-import ContactCta from "@/components/sections/contact/ContactCta";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
-import NoiseBackground from "@/components/ui/NoiseBackground";
+import Button from "@/components/ui/Button";
+import TextAnimation from "@/components/ui/TextAnimation";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      <NoiseBackground position="fixed" />
-      
-      <NavbarCentered
-        logo="United Team"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Get Started", href: "/contact" }}
-      />
-
-      <main className="relative z-10 pt-24 pb-16 flex flex-col gap-24">
-        <AboutTextSplit
-          title="Built on Honesty, Transparency, and Partnership"
-          descriptions={[
-            "Since our founding on October 1, 2023, our mission has remained simple: deliver professional dispatch services built on honesty, transparency, and long-term partnerships.",
-            "United Team is a professional Amazon Relay dispatch company providing reliable 24/7 dispatch support throughout the United States."
-          ]}
-          textAnimation="fade-blur"
-        />
-
-        <FeaturesIconCards
-          tag="Our Specialization"
-          title="Maximizing Revenue for Carriers"
-          description="We specialize in maximizing revenue for carriers and owner-operators by combining our core strengths."
-          features={[
-            {
-              icon: "📈",
-              title: "Market Knowledge",
-              description: "Deep understanding of freight markets to secure the best rates and keep your trucks moving profitably."
-            },
-            {
-              icon: "🗺️",
-              title: "Strategic Planning",
-              description: "Optimized routing, scheduling, and load planning tailored to your specific operational needs."
-            },
-            {
-              icon: "💬",
-              title: "Exceptional Communication",
-              description: "Reliable 24/7 support and transparent updates every step of the way, so you are never in the dark."
-            }
-          ]}
-          textAnimation="slide-up"
-        />
-
-        <ContactCta
-          tag="Partner With Us"
-          text="Ready to maximize your revenue with a trusted dispatch partner?"
-          primaryButton={{ text: "Contact Us", href: "/contact" }}
-          secondaryButton={{ text: "Our Services", href: "/services" }}
-          textAnimation="fade"
-        />
-      </main>
-
-      <div className="relative z-10">
-        <FooterSimple
-          brand="United Team"
-          columns={[
-            {
-              title: "Company",
-              items: [
-                { label: "About Us", href: "/about" },
-                { label: "Services", href: "/services" },
-                { label: "Contact", href: "/contact" }
-              ]
-            }
-          ]}
-          copyright="© 2024 United Team. All rights reserved."
-          links={[
-            { label: "Privacy Policy", href: "#" },
-            { label: "Terms of Service", href: "#" }
-          ]}
-        />
-      </div>
-    </div>
+    <>
+      <div data-webild-section="AboutTextSplit"><section aria-label="About section" className="py-20"><div className="flex flex-col gap-20 mx-auto w-content-width"><div className="flex flex-col md:flex-row gap-3 md:gap-15"><div className="w-full md:w-1/2"><TextAnimation text="Who We Are" variant="slide-up" gradientText={true} tag="h2" className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-balance" /></div><div className="flex flex-col gap-2 w-full md:w-1/2"><TextAnimation key={0} text="Since our founding on October 1, 2023, our mission has remained simple: deliver professional dispatch services built on honesty, transparency, and long-term partnerships." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={1} text="United Team is a professional Amazon Relay dispatch company providing reliable 24/7 dispatch support throughout the United States." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={2} text="We specialize in maximizing revenue for carriers and owner-operators by combining market knowledge, strategic planning, and exceptional communication." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" /><div className="flex flex-wrap gap-3 mt-2 md:mt-3"><Button text="Get in Touch" href="/contact" variant="primary" /><Button variant="secondary" animationDelay={0.1} /></div></div></div><div className="w-full border-b border-foreground/5" /></div></section></div>
+    </>
   );
 }
