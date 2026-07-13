@@ -25,7 +25,7 @@ export default function CtaSection() {
   ];
 
   return (
-    <section data-webild-section="cta" id="cta" className="relative w-full py-24 bg-primary-cta overflow-hidden">
+    <section data-webild-section="cta" id="cta" className="relative w-full py-24 bg-background overflow-hidden">
       <div className="w-content-width mx-auto flex flex-col items-center text-center">
         <ScrollReveal variant="fade">
           <div className="inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-[#00ff66]/20 bg-[#00ff66]/10 text-[#00ff66] text-sm font-medium mb-6 uppercase tracking-wider">
