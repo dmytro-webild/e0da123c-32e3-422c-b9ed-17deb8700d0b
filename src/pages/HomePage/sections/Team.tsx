@@ -9,7 +9,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 const members = [
   {
     name: "Alex Johnson",
-    role: "Senior Dispatcher",
+    role: "Co-Founder",
     imageSrc: "http://img.b2bpic.net/free-photo/young-attractive-man-glassess-is-standing-near-workplace-office-he-wears-blue-shirt-dark-jacket-laptop-hand-he-is-looking-camera_197531-519.jpg"
   },
   {
