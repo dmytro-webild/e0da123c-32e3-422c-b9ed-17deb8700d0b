@@ -43,7 +43,7 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
       logo="United Team"
-      logoImageSrc="https://picsum.photos/seed/logoimagesrc/800/600"
+      logoImageSrc="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1783951383443-xwfo2dy8.png"
       ctaButton={{
         text: "Contact Us",
         href: "#contact",
