@@ -1,108 +1,19 @@
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import AboutParallaxHighlight from "@/components/sections/about/AboutParallaxHighlight";
-import AboutFeaturesSplit from "@/components/sections/about/AboutFeaturesSplit";
-import TeamProfileCards from "@/components/sections/team/TeamProfileCards";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
+import Button from "@/components/ui/Button";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import GridOrCarousel from "@/components/ui/GridOrCarousel";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <NavbarCentered
-        logo="Webild"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Get Started", href: "/contact" }}
-      />
-
-      <main className="flex-grow">
-        <AboutParallaxHighlight
-          tag="Our Story"
-          title="Building the future of"
-          titleHighlight="digital experiences"
-          description="We are a team of passionate creators, engineers, and designers dedicated to crafting exceptional software that empowers businesses to thrive in the modern era. We believe in the power of technology to transform ideas into reality."
-          primaryButton={{ text: "Join Our Team", href: "/careers" }}
-          secondaryButton={{ text: "View Our Work", href: "/portfolio" }}
-          frontImageSrc="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
-          backImageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
-          textAnimation="fade-blur"
-        />
-
-        <AboutFeaturesSplit
-          tag="Core Values"
-          title="What drives us forward"
-          description="Our principles guide every decision we make and every line of code we write. We are committed to delivering excellence through our core values."
-          items={[
-            {
-              icon: "🚀",
-              title: "Innovation",
-              description: "We constantly push boundaries to find better, more efficient solutions for complex problems."
-            },
-            {
-              icon: "🤝",
-              title: "Empathy",
-              description: "We build for humans, prioritizing user experience and accessibility above all else."
-            },
-            {
-              icon: "🛡️",
-              title: "Integrity",
-              description: "We operate with transparency and honesty in all our partnerships and client relationships."
-            }
-          ]}
-          imageSrc="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
-          textAnimation="slide-up"
-        />
-
-        <TeamProfileCards
-          tag="Leadership"
-          title="Meet the minds behind the magic"
-          description="A diverse group of industry veterans committed to excellence and driving our vision forward."
-          items={[
-            {
-              title: "Jane Doe",
-              description: "CEO & Founder",
-              avatarSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
-            },
-            {
-              title: "John Smith",
-              description: "Chief Technology Officer",
-              avatarSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
-            },
-            {
-              title: "Alice Johnson",
-              description: "Head of Design",
-              avatarSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
-            }
-          ]}
-          textAnimation="fade"
-        />
-      </main>
-
-      <FooterSimple
-        brand="Webild"
-        columns={[
-          {
-            title: "Company",
-            items: [
-              { label: "About Us", href: "/about-us" },
-              { label: "Careers", href: "/careers" },
-              { label: "Contact", href: "/contact" }
-            ]
-          },
-          {
-            title: "Resources",
-            items: [
-              { label: "Blog", href: "/blog" },
-              { label: "Documentation", href: "/docs" },
-              { label: "Help Center", href: "/help" }
-            ]
-          }
-        ]}
-        copyright="© 2024 Webild Inc. All rights reserved."
-        links={[
-          { label: "Privacy Policy", href: "/privacy" },
-          { label: "Terms of Service", href: "/terms" }
-        ]}
-      />
-    </div>
+    <>
+      <div data-webild-section="AboutTextSplit"><section aria-label="About section" className="py-20"><div className="flex flex-col gap-20 mx-auto w-content-width"><div className="flex flex-col md:flex-row gap-3 md:gap-15"><div className="w-full md:w-1/2"><TextAnimation text="Your Trusted Amazon Relay Dispatch Partner" variant="slide-up" gradientText={true} tag="h2" className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-balance" /></div><div className="flex flex-col gap-2 w-full md:w-1/2"><TextAnimation key={0} text="At United Team, we specialize in providing top-tier Amazon Relay dispatch services for carriers nationwide. Our dedicated professionals ensure your trucks stay moving and profitable." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={1} text="We understand the complexities of freight logistics and the fast-paced nature of Amazon Relay. That's why we handle the heavy lifting of load booking, route planning, and compliance." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" />
+<TextAnimation key={2} text="Partner with us to experience seamless operations, 24/7 support, and a commitment to maximizing your fleet's potential." variant="slide-up" gradientText={false} tag="p" className="text-xl md:text-2xl leading-snug text-balance" /><div className="flex flex-wrap gap-3 mt-2 md:mt-3"><Button text="Get in Touch" href="/contact" variant="primary" /><Button text="Our Services" href="/services" variant="secondary" animationDelay={0.1} /></div></div></div><div className="w-full border-b border-foreground/5" /></div></section></div>
+      <div data-webild-section="TeamOverlayCards"><section aria-label="Team section" className="py-20"><div className="flex flex-col gap-8 md:gap-10"><div className="flex flex-col items-center gap-2 w-content-width mx-auto"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>Our Team</p></div><TextAnimation text="Meet the Dispatch Experts" variant="fade-blur" gradientText={true} tag="h2" className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Our dedicated professionals ensure smooth and efficient freight operations for your Amazon Relay needs." variant="fade-blur" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="Contact Us" href="/contact" variant="primary" /><Button variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="fade-blur"><GridOrCarousel><div key="Alex Johnson" className="relative aspect-4/5 card rounded"><div className="relative w-full h-full rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/portrait-smiling-young-man-looking-camera_23-2148154668.jpg" /><div className="absolute inset-x-4 bottom-4 xl:inset-x-5 xl:bottom-5 2xl:inset-x-6 2xl:bottom-6 flex items-center justify-between gap-4 xl:gap-5 2xl:gap-6 p-4 xl:p-5 2xl:p-6 card backdrop-blur-sm rounded"><span className="text-xl font-semibold leading-snug truncate">Alex Johnson</span><div className="px-3 py-2 text-sm primary-button text-primary-cta-text rounded"><p className="truncate">Lead Dispatcher</p></div></div></div></div>
+<div key="Sarah Smith" className="relative aspect-4/5 card rounded"><div className="relative w-full h-full rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" /><div className="absolute inset-x-4 bottom-4 xl:inset-x-5 xl:bottom-5 2xl:inset-x-6 2xl:bottom-6 flex items-center justify-between gap-4 xl:gap-5 2xl:gap-6 p-4 xl:p-5 2xl:p-6 card backdrop-blur-sm rounded"><span className="text-xl font-semibold leading-snug truncate">Sarah Smith</span><div className="px-3 py-2 text-sm primary-button text-primary-cta-text rounded"><p className="truncate">Operations Manager</p></div></div></div></div>
+<div key="Mike Davis" className="relative aspect-4/5 card rounded"><div className="relative w-full h-full rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg" /><div className="absolute inset-x-4 bottom-4 xl:inset-x-5 xl:bottom-5 2xl:inset-x-6 2xl:bottom-6 flex items-center justify-between gap-4 xl:gap-5 2xl:gap-6 p-4 xl:p-5 2xl:p-6 card backdrop-blur-sm rounded"><span className="text-xl font-semibold leading-snug truncate">Mike Davis</span><div className="px-3 py-2 text-sm primary-button text-primary-cta-text rounded"><p className="truncate">Logistics Coordinator</p></div></div></div></div>
+<div key="Elena Ross" className="relative aspect-4/5 card rounded"><div className="relative w-full h-full rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg" /><div className="absolute inset-x-4 bottom-4 xl:inset-x-5 xl:bottom-5 2xl:inset-x-6 2xl:bottom-6 flex items-center justify-between gap-4 xl:gap-5 2xl:gap-6 p-4 xl:p-5 2xl:p-6 card backdrop-blur-sm rounded"><span className="text-xl font-semibold leading-snug truncate">Elena Ross</span><div className="px-3 py-2 text-sm primary-button text-primary-cta-text rounded"><p className="truncate">Client Relations</p></div></div></div></div></GridOrCarousel></ScrollReveal></div></section></div>
+    </>
   );
 }
