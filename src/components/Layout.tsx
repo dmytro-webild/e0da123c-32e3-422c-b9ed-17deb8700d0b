@@ -115,7 +115,7 @@ export default function Layout() {
               <h4 className="text-sm font-semibold text-white/70 tracking-wider mb-6 uppercase">Office</h4>
               <div className="relative rounded-xl overflow-hidden h-48 bg-white/5 border border-white/10 group">
                 <img 
-                  src="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1783955251392-sk2d9kuq.png" 
+                  src="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1783955761299-q3cjdyb3.png" 
                   alt="Map location" 
                   className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity"
                 />
