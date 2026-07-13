@@ -54,6 +54,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
+        <div className="[&_img]:brightness-200">
         <FooterSimpleMedia
       brand="United Team"
       columns={[
@@ -118,6 +119,7 @@ export default function Layout() {
       ]}
       imageSrc="https://storage.googleapis.com/webild/users/user_3GRpdvQoJFjolu5kC3kYNdQAvbt/uploaded-1783945575306-8wuf5v5s.png"
     />
+        </div>
       </SectionErrorBoundary>
     </StyleProvider>
   );
