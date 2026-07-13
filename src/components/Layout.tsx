@@ -56,9 +56,9 @@ export default function Layout() {
       </main>
       <SectionErrorBoundary name="footer">
         <footer className="bg-[#0B0F19] py-16 border-t border-white/5">
-          <div className="w-content-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="w-content-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
             {/* Brand & Social */}
-            <div className="space-y-6">
+            <div className="md:col-span-4 lg:col-span-3 space-y-6">
               <h3 className="text-2xl font-bold text-white">RFA Dispatching Team</h3>
               <p className="text-accent text-sm leading-relaxed">
                 Premium dispatch services for carriers and drivers across the United States.
@@ -77,7 +77,7 @@ export default function Layout() {
             </div>
 
             {/* Quick Links */}
-            <div>
+            <div className="md:col-span-2 lg:col-span-2">
               <h4 className="text-sm font-semibold text-white/70 tracking-wider mb-6 uppercase">Quick Links</h4>
               <ul className="space-y-4">
                 <li><a href="#hero" className="text-accent hover:text-white transition-colors">Home</a></li>
