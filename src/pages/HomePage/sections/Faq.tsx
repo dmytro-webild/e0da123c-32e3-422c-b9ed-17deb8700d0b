@@ -4,7 +4,7 @@ import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 
 export default function FaqSection(): React.JSX.Element {
   return (
-    <div data-webild-section="faq" id="faq" id="faq" data-section="faq">
+    <div data-webild-section="faq" id="faq" data-section="faq">
       <SectionErrorBoundary name="faq">
         <FaqSimple
           tag="FAQ"
