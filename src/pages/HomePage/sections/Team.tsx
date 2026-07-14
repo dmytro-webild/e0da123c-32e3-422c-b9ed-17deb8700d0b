@@ -19,7 +19,7 @@ const members = [
   },
   {
     name: "Mike Davis",
-    role: "Dispatcher",
+    role: "Load Planner",
     imageSrc: "http://img.b2bpic.net/free-photo/modern-company-manager-workplace-bright-office_1163-5267.jpg"
   },
   {
