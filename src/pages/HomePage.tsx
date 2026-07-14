@@ -72,51 +72,30 @@ export default function HomePage() {
       description="We specialize in Amazon Relay dispatch services throughout the United States, combining market expertise and exceptional communication."
       items={[
         {
-          title: "24/7 Dispatch Support",
-          description: "Round-the-clock availability and support for your fleet operations.",
-          tags: ["24/7", "Support"],
+          title: "Amazon Relay Dispatch",
+          description: "Expert management for your Amazon load requirements.",
+          tags: [
+            "Amazon",
+            "Dispatch",
+          ],
+          imageSrc: "http://img.b2bpic.net/free-photo/aerial-shot-road-with-pilot-mountain-north-carolina-usa-cloudy-blue-sky_181624-20895.jpg",
+        },
+        {
+          title: "24/7 Support",
+          description: "Round-the-clock availability for your fleet needs.",
+          tags: [
+            "24/7",
+            "Support",
+          ],
           imageSrc: "http://img.b2bpic.net/free-photo/handicapped-disabled-operator-sitting-wheelchair-making-telemarketing-business-office-immobilized-disabled-paralysed-freelancer-working-financial-corporate-building-using-heatset_482257-12923.jpg",
         },
         {
-          title: "Expert Rate Negotiation",
-          description: "Maximizing your revenue through proactive and expert rate negotiation.",
-          tags: ["Revenue", "Negotiation"],
-          imageSrc: "http://img.b2bpic.net/free-photo/3d-render-cardboard-boxes-pile-clipboard-pen_107791-17002.jpg",
-        },
-        {
-          title: "Strategic Load Planning",
-          description: "Efficiently planning loads to minimize downtime and maximize profitability.",
-          tags: ["Planning", "Efficiency"],
-          imageSrc: "http://img.b2bpic.net/free-photo/aerial-shot-road-with-pilot-mountain-north-carolina-usa-cloudy-blue-sky_181624-20895.jpg",
-        },
-        {
-          title: "Advanced Route Optimization",
-          description: "Optimizing routes to save fuel, time, and reduce operational costs.",
-          tags: ["Routing", "Optimization"],
-          imageSrc: "http://img.b2bpic.net/free-photo/aerial-shot-road-with-pilot-mountain-north-carolina-usa-cloudy-blue-sky_181624-20895.jpg",
-        },
-        {
-          title: "Dedicated Driver Communication",
-          description: "Maintaining clear and consistent communication with drivers on the road.",
-          tags: ["Communication", "Drivers"],
-          imageSrc: "http://img.b2bpic.net/free-photo/handicapped-disabled-operator-sitting-wheelchair-making-telemarketing-business-office-immobilized-disabled-paralysed-freelancer-working-financial-corporate-building-using-heatset_482257-12923.jpg",
-        },
-        {
-          title: "Performance Tracking & Reporting",
-          description: "Detailed analytics and reporting to monitor and improve fleet performance.",
-          tags: ["Tracking", "Reporting"],
-          imageSrc: "http://img.b2bpic.net/free-photo/3d-render-cardboard-boxes-pile-clipboard-pen_107791-17002.jpg",
-        },
-        {
-          title: "Safety & Compliance Guidance",
-          description: "Ensuring your operations meet all safety and regulatory compliance standards.",
-          tags: ["Safety", "Compliance"],
-          imageSrc: "http://img.b2bpic.net/free-photo/aerial-shot-road-with-pilot-mountain-north-carolina-usa-cloudy-blue-sky_181624-20895.jpg",
-        },
-        {
-          title: "Precise Trip Sheet Calculation",
-          description: "Accurate and timely trip sheet calculations for seamless accounting.",
-          tags: ["Trip Sheets", "Accounting"],
+          title: "Rate Negotiation",
+          description: "Maximizing your revenue through proactive negotiation.",
+          tags: [
+            "Revenue",
+            "Negotiation",
+          ],
           imageSrc: "http://img.b2bpic.net/free-photo/3d-render-cardboard-boxes-pile-clipboard-pen_107791-17002.jpg",
         },
       ]}
