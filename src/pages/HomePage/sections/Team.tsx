@@ -108,7 +108,7 @@ const TeamInline = () => (
         </div>
 
         <TextAnimation
-          text={"United Team"}
+          text={"The United Team"}
           variant={"slide-up"}
           gradientText={true}
           tag="h2"
