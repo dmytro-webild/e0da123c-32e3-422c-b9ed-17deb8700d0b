@@ -12,10 +12,11 @@ import FeaturesSection from './HomePage/sections/Features';
 import MetricsSection from './HomePage/sections/Metrics';
 import TeamSection from './HomePage/sections/Team';
 import TestimonialsSection from './HomePage/sections/Testimonials';
-import ContactSection from './HomePage/sections/Contact';
 
 
-import PartnersSection from './HomePage/sections/Partners';export default function HomePage(): React.JSX.Element {
+import PartnersSection from './HomePage/sections/Partners';
+import FaqSection from './HomePage/sections/Faq';
+import ContactDetailsSection from './HomePage/sections/ContactDetails';export default function HomePage(): React.JSX.Element {
   return (
 <>
   <HeroSection />
@@ -32,8 +33,9 @@ import PartnersSection from './HomePage/sections/Partners';export default functi
   <TeamSection />
 
   <TestimonialsSection />
+      <ContactDetailsSection />
 
-  <ContactSection />
+      <FaqSection />
     </>
   );
 }
