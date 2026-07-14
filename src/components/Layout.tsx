@@ -59,7 +59,7 @@ export default function Layout() {
           <div className="w-content-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
             {/* Brand & Social */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-white">RFA Dispatching Team</h3>
+              <h3 className="text-2xl font-bold text-white">United Team</h3>
               <p className="text-accent text-sm leading-relaxed">
                 Premium dispatch services for carriers and drivers across the United States.
               </p>
@@ -101,7 +101,7 @@ export default function Layout() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                  <a href="mailto:rustamamonov624@gmail.com" className="text-accent hover:text-white transition-colors">rustamamonov624@gmail.com</a>
+                  <a href="mailto:uniteddispatch24@gmail.com" className="text-accent hover:text-white transition-colors">uniteddispatch24@gmail.com</a>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
